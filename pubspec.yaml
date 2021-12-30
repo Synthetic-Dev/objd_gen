@@ -3,6 +3,7 @@ description: A package of code generators for objD Annotations
 version: 0.0.3
 homepage: https://objd.stevertus.com
 documentation: https://objd.stevertus.com
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -12,6 +13,9 @@ dependencies:
   build_config: ^1.0.0
   analyzer: ^2.7.0
   source_gen: ^1.1.1
-  objd: ^0.4.3
+  objd:
+    git:
+      url: https://github.com/Synthetic-Dev/objD
+      ref: master
 dev_dependencies:
   lints: ^1.0.1
